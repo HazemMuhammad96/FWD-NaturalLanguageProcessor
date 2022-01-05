@@ -1,0 +1,44 @@
+.bigInput {
+    min-width: 300px;
+    width: 70%;
+    max-width: 500px;
+    
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    background-color: $colorPrimaryContainer;
+    overflow: hidden;
+
+    input {
+        flex: 1;
+        padding: 0px 8px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $colorOnPrimaryContainer;
+        font-size: large;
+    }
+
+    button {
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 8px;
+        overflow: hidden;
+        border: none;
+        outline: none;
+        background-color: $colorPrimary;
+        color: $colorOnPrimary;
+        font-size: larger;
+        
+        &:hover {
+            filter: $filterHover;
+        }
+
+        &:active {
+            filter: $filterActive;
+        }
+    }
+}
